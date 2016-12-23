@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>WELCOME TO THE OUR WEDDING</title>
+<!--
+<link rel="stylesheet" href="/wedding/css/jquery.mobile.flip.css" />
+-->
+<link rel="stylesheet" href="/wedding/css/jquery.mobile-1.4.3.css" />
+
+<style type="text/css">
+*{font-family:'나눔고딕',NanumGothic,'돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif !important}
+body,input,textarea,select,button,table,h1,h2,h3,h4,h5{font-size:14px;line-height:1.267em}
+
+/* COMMON */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table,h1,h2,h3,h4,h5{font-family:HelveticaNeue-Light,AppleSDGothicNeo-Light,sans-serif;font-size:15px;line-height:1.267em}
+body{position:relative;margin:0;padding:0;background-color:#FFFFFF;color:#000;-webkit-text-size-adjust:none; max-width:960px; margin:0 auto;}
+table{border-collapse:collapse}
+img,fieldset{border:0}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{color:inherit;text-decoration:none}
+img{vertical-align:top}
+
+.header{height:450px;background:url(/wedding/img/head2.png) repeat-x;overflow:hidden;}
+.title{background:url(/wedding/img/title2.png) no-repeat;width:581px; height:290px;margin-top:40px; margin-left:auto; margin-right:auto;}
+.nav{margin-top:55px;z-index:20; height:80px; }
+.nav_u{display:table; width:100%; height:80px;}
+.nav_u > li{display:table-cell; white-space:nowrap; text-align:center;}
+.nav_u > li > a{text-indent:0; font-size:0;display:block; margin:auto}
+.nav_u > li a{background:url(/wedding/img/menu01_.png) no-repeat; height:32px; width:121px;}
+.nav_u > li + li a{background:url(/wedding/img/menu02_.png) no-repeat;}
+.nav_u > li + li + li a{background:url(/wedding/img/menu03_.png) no-repeat;}
+.nav_u > li.on a{background:url(/wedding/img/menu01.png) no-repeat; height:32px; width:121px;}
+.nav_u > li + li.on a{background:url(/wedding/img/menu02.png) no-repeat;}
+.nav_u > li + li + li.on a{background:url(/wedding/img/menu03.png) no-repeat;}
+.nav_u > li.on > a{color:#00EEEE;} 
+
+//.footer{background-color:#000000; height:200px;overflow:hidden;}
+//.footer .copyright{font-size:18px; color:#BBAABB; margin-top:60px; margin-left:60px;}
+
+.footer{background:url(/wedding/img/bg_pattern.gif); padding-bottom:40px;overflow:hidden;}
+
+.d_day{position:absolute; background:url(/wedding/img/rolling/main_txt.png) no-repeat; width:438px; height:188px; top:65%; left:10%;}
+.jSlots-wrapper{position:absolute; left:153px; top:4px; overflow:hidden; width:232px;padding-left-119px;height:105px;display:inline-block;}
+.slot{float:left;}
+
+#ct {position:relative; z-index:1}
+.touchslider-viewport{overflow:hidden}
+.contents{position:relative; padding 10px; text-align:center;}
+//.contents .con{width:100%; background-color:#EDEDED}
+.contents .con{width:100%;}
+//.contents.photo .con{margin-top:20px;}
+.contents.photo .con{margin-bottom:40px;}
+.contents.photo .con:first-child{margin-top:40px;}
+.contents.photo .con:last-child{margin-bottom:0px;}
+//.contents.photo .con > div{display:inline-block;background-size:10px 100%;background-color:#FFFFFF; border-radius:8px; box-shadow:0 1px 3px #999; padding:20px;}
+//.contents.photo img {max-width:740px}
+
+</style>
+<!--
+<script type="text/javascript" src="/wedding/js/jquery-1.11.1.js"></script>
+-->
+<script type="text/javascript" src="/wedding/js/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="/wedding/js/jquery.jSlots.js"></script>
+<!--
+<script type="text/javascript" src="/wedding/js/jquery.touchSlider.js"></script>
+-->
+<script type="text/javascript" src="/wedding/js/jquery.touchslider.min.js"></script>
+<!--
+<script type="text/javascript" src="/wedding/js/jquery.mobile-1.4.3.js"></script>
+-->
+<!--
+<script type="text/javascript" src="/wedding/js/jquery.mobile.flip.js"></script>
+-->
+</head>
+
+<body>
+  <div class="touchslider">
+    <div class="header">
+        <div class="title">
+        </div>
+        <div id="nav" class="nav">
+            <ul class="nav_u">
+                <li class="on touchslider-nav-item"><a href="#" onclick="return false;" class="intro">모시는 글</a></li>
+                <li class="touchslider-nav-item"><a href="#" onclick="return false;" class="photo">사진첩</a></li>
+                <li class="touchslider-nav-item"><a href="#" onclick="return false;" class="map">오시는 길</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="ct">
+              <div class="touchslider-viewport">
+                <div class="item touchslider-item" id="intro" name="intro">
+                    <div class="contents" id='a'>
+                      <div class="con">
+                        <img src="/wedding/img/main_img2.jpg" width="100%">
+                        <div class="d_day">
+                        <div class="jSlots-wrapper">
+                            <ul class="slot">
+                                <li><img src="/wedding/img/rolling/0.png"></li>
+                                <li><img src="/wedding/img/rolling/1.png"></li>
+                                <li><img src="/wedding/img/rolling/2.png"></li>
+                                <li><img src="/wedding/img/rolling/3.png"></li>
+                                <li><img src="/wedding/img/rolling/4.png"></li>
+                                <li><img src="/wedding/img/rolling/5.png"></li>
+                                <li><img src="/wedding/img/rolling/6.png"></li>
+                                <li><img src="/wedding/img/rolling/7.png"></li>
+                                <li><img src="/wedding/img/rolling/8.png"></li>
+                                <li><img src="/wedding/img/rolling/9.png"></li>
+                            </ul>
+                            <ul class="slot">
+                                <li><img src="/wedding/img/rolling/0.png"></li>
+                                <li><img src="/wedding/img/rolling/1.png"></li>
+                                <li><img src="/wedding/img/rolling/2.png"></li>
+                                <li><img src="/wedding/img/rolling/3.png"></li>
+                                <li><img src="/wedding/img/rolling/4.png"></li>
+                                <li><img src="/wedding/img/rolling/5.png"></li>
+                                <li><img src="/wedding/img/rolling/6.png"></li>
+                                <li><img src="/wedding/img/rolling/7.png"></li>
+                                <li><img src="/wedding/img/rolling/8.png"></li>
+                                <li><img src="/wedding/img/rolling/9.png"></li>
+                            </ul>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="con footer">
+                        <img src="/wedding/img/footer.png" width="100%">
+                      </div>
+                   </div>
+                </div>
+                <div class="item touchslider-item" id="photo" name="photo">
+                    <div class="contents photo" id='b'>
+                      <div class="con">
+                        <div>
+                            <img src="/wedding/img/album2/01.jpg" >
+                        </div>
+                      </div>
+                      <div class="con">
+                        <div>
+                            <img src="/wedding/img/album2/02.jpg" >
+                        </div>
+                      </div>
+                      <div class="con">
+                        <div>
+                            <img src="/wedding/img/album2/03.jpg" >
+                        </div>
+                      </div>
+                      <div class="con">
+                        <div>
+                            <img src="/wedding/img/album2/04.jpg" >
+                        </div>
+                      </div>
+                      <div class="con">
+                        <div>
+                            <img src="/wedding/img/album2/05.jpg" >
+                        </div>
+                      </div>
+                      <div class="con">
+                        <div>
+                            <img src="/wedding/img/album2/06.jpg" >
+                        </div>
+                      </div>
+                      <div class="con">
+                        <div>
+                            <img src="/wedding/img/album2/07.jpg" >
+                        </div>
+                      </div>
+                      <div class="con">
+                        <div>
+                            <img src="/wedding/img/album2/08.jpg" >
+                        </div>
+                      </div>
+                      <div class="con">
+                        <div>
+                            <img src="/wedding/img/album2/09.jpg" >
+                        </div>
+                      </div>
+                      <div class="con">
+                        <div>
+                            <img src="/wedding/img/album2/10.jpg" >
+                        </div>
+                      </div>
+                      <div class="con">
+                        <div>
+                            <img src="/wedding/img/album2/11.jpg" >
+                        </div>
+                      </div>
+                      <div class="con">
+                        <div>
+                            <img src="/wedding/img/album2/12.jpg" >
+                        </div>
+                      </div>
+                      <div class="con">
+                        <div>
+                            <img src="/wedding/img/album2/13.jpg" >
+                        </div>
+                      </div>
+                      <div class="con">
+                        <div>
+                            <img src="/wedding/img/album2/14.jpg" >
+                        </div>
+                      </div>
+                      <div class="con">
+                        <div>
+                            <img src="/wedding/img/album2/19.jpg" >
+                        </div>
+                      </div>
+                      <div class="con">
+                        <div>
+                            <img src="/wedding/img/album2/15.jpg" >
+                        </div>
+                      </div>
+                      <!--
+                      <div class="con">
+                        <div>
+                            <img src="/wedding/img/album/16.jpg" >
+                        </div>
+                      </div>
+                      <div class="con">
+                        <div>
+                            <img src="/wedding/img/album/17.jpg" >
+                        </div>
+                      </div>
+                      <div class="con">
+                        <div>
+                            <img src="/wedding/img/album/18.jpg" >
+                        </div>
+                      </div>
+                      -->
+                      <div class="con footer">
+                        <img src="/wedding/img/footer.png" width="100%">
+                      </div>
+                    </div>
+                </div>
+                <div class="item touchslider-item" id="map" name="map">
+                    <div class="contents map" id='c'>
+                      <div class="con">
+                        <img src="/wedding/img/map_all.jpg" width="100%">
+                      </div>
+                      <!--
+                      <div class="con" style="margin-top:-50px">
+                        <img src="/wedding/img/map2_3.jpg" width="" usemap="#road">
+                        <map name="road">
+                            <area shape="rect" coords="20,730,270,870" href="http://map.naver.com/?dlevel=12&pinType=site&pinId=12058124&x=126.9731596&y=37.5614107&enc=b64">
+                            <area shape="rect" coords="20,730,270,870" href="#" onclick="window.location.href='http://map.naver.com/?dlevel=12&pinType=site&pinId=12058124&x=126.9731596&y=37.5614107&enc=b64'">
+                        </map>
+                      </div>
+                      -->
+                      <div class="con" style="text-align:left">
+                        <img src="/wedding/img/map_btn.jpg" onclick="window.location.href='http://map.naver.com/?dlevel=12&pinType=site&pinId=12058124&x=126.9731596&y=37.5614107&enc=b64'" style="cursor:pointer">
+                      </div>
+                      <div class="con footer">
+                        <img src="/wedding/img/footer.png" width="100%">
+                      </div>
+                      <!--
+                      <div class="con" style="margin-top:40px;">
+                        <a href="http://me2.do/xjFc4K3h"><span>지도</span></a>
+                      </div>
+                      <div class="con" style="margin-top:40px;">
+                        <a href="http://map.naver.com/?app=Y&version=7&appMenu=location&pinId=12058124&pinType=site&lat=37.5614107&lng=126.9731596&title=%EC%98%A4%ED%8E%A0%EB%A6%AC%EC%8A%A4&dlevel=11"><span>지도2</span></a>
+                      </div>
+                      <div class="con" style="margin-top:40px;">
+                        <a href="http://map.naver.com/?dlevel=12&pinType=site&pinId=12058124&x=126.9731596&y=37.5614107&enc=b64"><img src="/wedding/img/map5.jpg" style="width:100px">
+                        <span style="font-size:48px; font-weight:bold; display:inline-block; margin-top:40px; margin-left:5px;">네이버지도</span></a>
+                      </div>
+                      -->
+                    </div>
+                    </div>
+                </div>
+              </div>
+    </div>
+<!--
+    <div class="footer">
+        <div class="copyright">
+            <span>COPYRIGHT 2014. KIM KYUNG SEOK + YOUN YOU SUN</span><br>
+            <span>ALL RIGHTS RESERVED</span>
+        </div>
+    </div>
+    -->
+  </div>
+</body>
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".contents").width($(".header").width());
+    jQuery(function($) {
+        $(".touchslider").touchSlider({
+            mouseTouch: true,
+            afterMove: function(toIndex) {
+                $(".nav_u > li").removeClass("on");
+                $(".nav_u > li").eq(toIndex).addClass("on"); 
+            }
+        });
+    });
+
+    var direction = 1;
+    $(".contents.photo .con:not(.footer)").each(function(i, el) {
+        if (i % 2 == 0) {
+            var degree = 5 * direction;
+            $(el).css("transform", "rotate(" +  degree + "deg)");
+        } else if (i % 2 == 1) {
+            direction = direction * -1;
+        }
+    });
+
+});
+
+var DDay = function(day1, day2) {
+    $(".slot").jSlots({
+        loops : 3,
+        time : 2000,
+        endNo1 : day1,
+        endNo2 : day2
+    });
+}
+
+$(window).load(function() {
+    var currentContents = $(".contents").first();
+    currentContents.parent().parent().height(currentContents.height());
+
+    var now = new Date();
+    var endDay = new Date("1/16/2017");
+    var calculateTime = endDay.getTime() - now.getTime();
+    var betweenDay = (Math.ceil(calculateTime / (1000 * 60 * 60 * 24))).toString();
+    var lengthDays = betweenDay.length;
+    var day1, day2;
+
+    if (lengthDays == "1") {
+        day1 = 0;
+        day2 = betweenDay;
+    } else if (lengthDays == "2") {
+        day1 = betweenDay.substring(0, 1);
+        day2 = betweenDay.substring(1, 2);
+    }
+
+    DDay(day1, day2);
+});
+</script>
+</html>
