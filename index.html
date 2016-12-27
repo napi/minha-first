@@ -84,6 +84,7 @@ img{vertical-align:top}
                         <div class="d_day">
                         <div class="jSlots-wrapper">
                             <ul class="slot">
+                                <li><img src="./img/rolling/0.png"></li>
                                 <li><img src="./img/rolling/1.png"></li>
                                 <li><img src="./img/rolling/2.png"></li>
                                 <li><img src="./img/rolling/3.png"></li>
@@ -248,7 +249,7 @@ $(window).load(function() {
     currentContents.parent().parent().height(currentContents.height());
 
     var now = new Date();
-    var endDay = new Date("1/16/2017");
+    var endDay = new Date("1/15/2017");
     var calculateTime = endDay.getTime() - now.getTime();
     var betweenDay = (Math.ceil(calculateTime / (1000 * 60 * 60 * 24))).toString();
     var lengthDays = betweenDay.length;
